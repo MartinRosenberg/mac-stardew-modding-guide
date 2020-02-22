@@ -4,7 +4,7 @@ This guide assumes that you already know a lot of things. If you need help with 
 
 ## 0. Install Homebrew
 
-> **Homebrew** is a package manager for macOS.
+> [**Homebrew**][0] is a package manager for macOS.
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -12,9 +12,13 @@ echo "export HOMEBREW_CASK_OPTS=\"--appdir=/Applications\"" >> ~/.bash_profile
 source ~/.bash_profile
 ```
 
+[0]: https://brew.sh/
+
 ## 1. Install Mono
 
-> **Mono** is an open source implementation of Microsoft's .NET Framework based on the Ecma standards for C# and the <abbr title="Common Language Runtime">CLR</abbr>.
+> [**Mono**][0] is an open source implementation of Microsoft's .NET Framework based on the Ecma standards for C# and the <abbr title="Common Language Runtime">CLR</abbr>.
+
+[0]: https://www.mono-project.com/
 
 ```bash
 brew install mono mono-libgdiplus
@@ -22,9 +26,9 @@ brew install mono mono-libgdiplus
 
 ## 2. Install SMAPI
 
-> **SMAPI** is the **S**tardew **M**odding **<abbr title="Application Programming Interface">API</abbr>**.
+> [**SMAPI**][0] is the **S**tardew **M**odding **<abbr title="Application Programming Interface">API</abbr>**.
 
-1. Go to the [**For mod creators**][0] section at the bottom of [SMAPI's website][1], and click on **SMAPI x.x.x for developers** to download the SMAPI installer.
+1. Go to the [**For mod creators**][0] section at the bottom of SMAPI's website, and click on **SMAPI x.x.x for developers** to download the SMAPI installer.
 2. Run:
 
     ```bash
@@ -32,5 +36,5 @@ brew install mono mono-libgdiplus
     ./SMAPI-3.2.0-installer-for-developers.zip
     ```
 
-[0]: https://smapi.io/#modcreators
-[1]: https://smapi.io/
+[0]: https://smapi.io/
+[1]: https://smapi.io/#modcreators
