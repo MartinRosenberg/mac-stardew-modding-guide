@@ -1,0 +1,1 @@
+# mac-stardew-modding-guide
