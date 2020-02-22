@@ -16,19 +16,19 @@ source ~/.bash_profile
 
 ## 1. Install Mono
 
-> [**Mono**][0] is an open source implementation of Microsoft's .NET Framework based on the Ecma standards for C# and the <abbr title="Common Language Runtime">CLR</abbr>.
-
-[0]: https://www.mono-project.com/
+> [**Mono**][1] is an open source implementation of Microsoft's .NET Framework based on the Ecma standards for C# and the <abbr title="Common Language Runtime">CLR</abbr>.
 
 ```bash
 brew install mono mono-libgdiplus
 ```
 
+[1]: https://www.mono-project.com/
+
 ## 2. Install SMAPI
 
-> [**SMAPI**][0] is the **S**tardew **M**odding **<abbr title="Application Programming Interface">API</abbr>**.
+> [**SMAPI**][2] is the **S**tardew **M**odding **<abbr title="Application Programming Interface">API</abbr>**.
 
-1. Go to the [**For mod creators**][0] section at the bottom of SMAPI's website, and click on **SMAPI x.x.x for developers** to download the SMAPI installer.
+1. Go to the [**For mod creators**][3] section at the bottom of SMAPI's website, and click on **SMAPI x.x.x for developers** to download the SMAPI installer.
 2. Run:
 
     ```bash
@@ -36,5 +36,5 @@ brew install mono mono-libgdiplus
     ./SMAPI-3.2.0-installer-for-developers.zip
     ```
 
-[0]: https://smapi.io/
-[1]: https://smapi.io/#modcreators
+[2]: https://smapi.io/
+[3]: https://smapi.io/#modcreators
