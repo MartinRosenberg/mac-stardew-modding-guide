@@ -28,12 +28,12 @@ brew install mono mono-libgdiplus
 
 > [**SMAPI**][2] is the **S**tardew **M**odding **<abbr title="Application Programming Interface">API</abbr>**.
 
-1. Go to the [**For mod creators**][3] section at the bottom of SMAPI's website, and click on **SMAPI x.x.x for developers** to download the SMAPI installer.
+1. Go to the [**For mod creators**][3] section at the bottom of SMAPI's website, and click on **SMAPI x.x.x for developers** (3.3.0 as of 22 Feb 2020) to download the SMAPI installer.
 2. Run:
 
     ```bash
-    unzip SMAPI-3.2.0-installer-for-developers.zip
-    ./SMAPI-3.2.0-installer-for-developers.zip
+    unzip SMAPI-3.3.0-installer-for-developers.zip
+    ./SMAPI-3.3.0-installer-for-developers.zip
     ```
 
 [2]: https://smapi.io/
