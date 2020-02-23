@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+################################################################################
+# Configuration
+################################################################################
+
+# Major and minor only, no patch
+SMAPI_version="3.3"
+
+################################################################################
+# Installation
+################################################################################
+
+function install_homebrew {
+    if [ ! $( command -v brew ) ]; then
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        echo "export HOMEBREW_CASK_OPTS=\"--appdir=/Applications\"" >> ~/.bash_profile
+        source ~/.bash_profile
+    fi
+}
+
+function install_dotnet_SDK {
+    if [ ! $( command -v dotnet ) ]; then
+        brew cask install dotnet-sdk
+    fi
+}
+
+function install_mono {
+    if [ ! $( command -v mono ) ]; then
+        brew install mono mono-libgdiplus
+    fi
+}
+
+function install_SMAPI {
+    # TODO check if SMAPI is already installed
+
+    local dir="SMAPI ${SMAPI_version}.0 installer for developers"
+    local installer="${dir}/install on Mac.command"
+    local zip="SMAPI-${SMAPI_version}.0-installer-for-developers.zip"
+    local URL="https://github.com/Pathoschild/SMAPI/releases/download/${SMAPI_version}/${zip}"
+
+    curl -L $URL > $zip
+    unzip $zip
+    rm $zip
+    "./$installer"
+}
+
+install_homebrew
+install_dotnet_SDK
+install_mono
+install_SMAPI
