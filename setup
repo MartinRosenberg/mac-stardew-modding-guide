@@ -4,8 +4,7 @@
 # Configuration
 ################################################################################
 
-# Major and minor only, no patch
-SMAPI_version="3.3"
+SMAPI_version="3.3.2"
 
 ################################################################################
 # Installation
@@ -34,9 +33,9 @@ function install_mono {
 function install_SMAPI {
     # TODO check if SMAPI is already installed
 
-    local dir="SMAPI ${SMAPI_version}.0 installer for developers"
+    local dir="SMAPI ${SMAPI_version} installer for developers"
     local installer="${dir}/install on Mac.command"
-    local zip="SMAPI-${SMAPI_version}.0-installer-for-developers.zip"
+    local zip="SMAPI-${SMAPI_version}-installer-for-developers.zip"
     local URL="https://github.com/Pathoschild/SMAPI/releases/download/${SMAPI_version}/${zip}"
 
     curl -L $URL > $zip
